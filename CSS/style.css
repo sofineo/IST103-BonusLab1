@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark: #212529;
+  --grey: #6c757d;
+  --background-color: #f8f9fa;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--dark);
+  text-align: left;
+  background-color: var(--background-color);
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+}
+
+header {
+  text-align: center;
+  padding: 48px 0 48px;
+}
+
+.logo-div {
+  padding-bottom: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-div img {
+  width: 300px;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+p {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.form-container {
+  display: flex;
+  border: 2px solid red;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.form {
+  position: relative;
+  padding: 0 15px 0 15px;
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%;
+  order: 1;
+}
+
+.cart {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  padding: 0 15px 0 15px;
+  order: 2;
+}
+
+.cart h2 {
+  color: var(--grey);
+  font-weight: 500;
+  line-height: 1.2;
+}
