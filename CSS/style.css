@@ -28,6 +28,7 @@ body {
 .container {
   max-width: 960px;
   margin: auto;
+  padding: 0 1rem;
 }
 
 header {
@@ -61,8 +62,6 @@ p {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
 }
 
 h2 {
@@ -350,4 +349,51 @@ footer ul {
 footer li a {
   text-decoration: underline;
   color: var(--blue);
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 0 1rem;
+  }
+
+  .form-container {
+    flex-direction: column;
+    align-content: center;
+    padding: 0 1rem;
+  }
+
+  .form {
+    order: 2;
+    max-width: 100%;
+    margin-top: 1.5rem;
+  }
+
+  #date {
+    font-size: 0.8rem;
+    text-wrap: nowrap;
+  }
+  .two-input-container, .three-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .cc-details {
+    width: 100%;
+    padding: 0;
+  }
+
+  .cart {
+    order: 1;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  #date {
+    font-size: 0.5rem;
+  }
+
+  .checkbox-container {
+    font-size: 0.8rem;
+  }
 }
