@@ -7,9 +7,11 @@
 :root {
   --dark: #212529;
   --grey: #6c757d;
+  --dark-grey: #495057;
   --white: #fff;
   --green: #28a745;
   --blue: #007bff;
+  --light: #ced4da;
   --background-color: #f8f9fa;
 }
 
@@ -57,7 +59,6 @@ p {
 
 .form-container {
   display: flex;
-  border: 2px solid red;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-right: -15px;
@@ -77,6 +78,125 @@ h2 {
   flex: 0 0 66.666667%;
   max-width: 66.666667%;
   order: 1;
+}
+
+#date {
+  background-color: var(--light);
+  color: var(--dark-grey);
+  border: 1px solid var(--light);
+  border-radius: 0.25rem;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  width: 100%;
+}
+
+input[type=text], input[type=email], select {
+  border: 1px solid #ced4da;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: var(--white);
+  background-clip: padding-box;
+  border: 1px solid var(--light);
+  border-radius: 0.25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.two-input-container {
+  display: flex;
+  margin-bottom: 1rem;
+  gap: 1.875rem;
+  justify-content: space-between;
+}
+
+.two-input-container span {
+  font-size: 80%;
+  font-weight: 400;
+  color: var(--grey);
+}
+
+.half-size-input {
+  width: 100%;
+}
+
+.one-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.one-row span {
+  color: var(--grey);
+}
+
+#username-input {
+  display: flex;
+  align-items: center;
+}
+
+#username-input span {
+  background-color: var(--light);
+  color: var(--dark-grey);
+  border: 1px solid var(--light);
+  border-radius: 0.25rem 0 0 0.25rem;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+#username {
+  border-radius: 0 0.25rem 0.25rem 0;
+}
+
+.three-row {
+  display: flex;
+  gap: 1.875rem;
+}
+
+hr {
+  border-top: 1px solid rgba(0,0,0,.1);
+  margin: 1rem 0 1.5rem;
+}
+
+.checkbox-container {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+input[type=checkbox] {
+  width: 1rem;
+  height: 1rem;
+}
+
+.payment {
+  margin-bottom: 1rem;
+}
+
+.cc-details {
+  width: 50%;
+  padding-right: 1rem;
+}
+
+input[type=submit] {
+  width: 100%;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+  color: var(--white);
+  background-color: var(--blue);
+  border-color: var(--blue);
 }
 
 .cart {
